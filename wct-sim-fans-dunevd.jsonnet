@@ -108,17 +108,19 @@ local sn_pipes = sim.splusn_pipelines;
 
 local sp_maker = import 'pgrapher/experiment/dune-vd/sp.jsonnet';
 local sp_override = {
-    sparse: true,
-    wiener_tag: "",
-    gauss_tag: "",
+    sparse: false,
+    // wiener_tag: "",
+    // gauss_tag: "",
     use_roi_debug_mode: true,
-    tight_lf_tag: "",
+    use_roi_refinement: true,
+    // tight_lf_tag: "",
     // loose_lf_tag: "",
-    cleanup_roi_tag: "",
-    break_roi_loop1_tag: "",
-    break_roi_loop2_tag: "",
-    shrink_roi_tag: "",
-    extend_roi_tag: "",
+    // cleanup_roi_tag: "",
+    // break_roi_loop1_tag: "",
+    // break_roi_loop2_tag: "",
+    // shrink_roi_tag: "",
+    // extend_roi_tag: "",
+    // m_decon_charge_tag: "",
     use_multi_plane_protection: false,
     mp_tick_resolution: 10,
 };
